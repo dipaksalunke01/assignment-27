@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ON key</title>
+</head>
+<body onload="load()">
+    <input type="text"
+    onkeydown="a()"
+    onkeyup="b()"
+    onkeypress="c()"
+    onchange="d()"
+    />
+
+    <script>
+        function a(){
+            console.warn("Key Down")
+        }
+        function b(){
+            console.warn("Key Up")
+        }
+        function c(){
+            console.warn("Key Press")
+        }
+        function d(){
+            console.warn("change Occured")
+        }
+        function load(){
+            console.warn("Page Loaded")
+        }
+    </script>
+
+    
+</body>
+</html>
